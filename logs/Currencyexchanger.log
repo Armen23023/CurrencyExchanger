@@ -1,2 +1,13 @@
 2024-07-06 12:53:19 INFO  MarketService:39 - Market :,Ararat Bank successfully added
 2024-07-06 13:04:13 INFO  MarketService:39 - Market :,Ararat Bank successfully added
+2024-07-06 18:40:55 INFO  MarketService:47 - Market :,ACBA successfully added
+2024-07-06 18:41:07 INFO  MarketService:47 - Market :,Ararat Bank successfully added
+2024-07-06 22:21:19 INFO  ExchangeService:109 - Transaction was complete
+2024-07-06 22:25:02 INFO  ExchangeService:109 - Transaction was complete
+2024-07-06 22:31:15 INFO  ExchangeService:109 - Transaction was complete
+2024-07-06 22:46:56 INFO  ExchangeService:109 - Transaction was complete
+2024-07-06 22:53:09 INFO  ExchangeService:109 - Transaction was complete
+2024-07-07 14:56:25 INFO  ExchangeService:109 - Transaction was complete
+2024-07-07 15:26:00 INFO  ExchangeService:104 - Transaction was complete
+2024-07-07 15:41:39 INFO  ExchangeService:104 - Transaction was complete
+2024-07-07 15:47:18 INFO  ExchangeService:104 - Transaction was complete

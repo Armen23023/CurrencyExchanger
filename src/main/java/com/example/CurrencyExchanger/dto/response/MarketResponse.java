@@ -16,5 +16,4 @@ public class MarketResponse {
     private Long id;
     private String name;
     private Set<CurrencyRate> currencyRates;
-
 }

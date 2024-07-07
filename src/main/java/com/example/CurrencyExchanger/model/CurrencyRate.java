@@ -1,5 +1,6 @@
 package com.example.CurrencyExchanger.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -21,6 +22,7 @@ public class CurrencyRate {
 
     @ManyToOne
     @JoinColumn(name = "market_id")
+    @JsonBackReference
     private Market market;
 
 

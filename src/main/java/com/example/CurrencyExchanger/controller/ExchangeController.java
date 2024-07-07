@@ -1,5 +1,6 @@
 package com.example.CurrencyExchanger.controller;
 
+import com.example.CurrencyExchanger.dto.request.ExchangeRequest;
 import com.example.CurrencyExchanger.model.CurrencyCode;
 import com.example.CurrencyExchanger.model.CurrencyRate;
 import com.example.CurrencyExchanger.model.Market;
@@ -9,10 +10,7 @@ import com.example.CurrencyExchanger.service.ExchangeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.math.BigDecimal;
 
@@ -29,4 +27,11 @@ public class ExchangeController {
                                                   @RequestParam String marketName) {
          return  exchangeService.setCurrencyRate(currency,rateToAMD,marketName);
     }
+
+
+    @PostMapping("/exchange-money")
+    public ResponseEntity<String> exchangeMoney(@RequestBody ExchangeRequest exchangeRequest){
+        return exchangeService.exchangeMoney(exchangeRequest);
+    }
+
 }
