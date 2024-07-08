@@ -60,6 +60,7 @@ public class MarketService {
 
     }
 
+    @Transactional
     public void deleteByName(String name) {
         if (marketRepository.existsByName(name)){
             marketRepository.deleteByName(name);

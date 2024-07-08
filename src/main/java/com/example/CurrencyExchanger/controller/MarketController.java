@@ -17,8 +17,8 @@ public class MarketController {
     }
 
     @PostMapping
-    public ResponseEntity<ResponseEntity<String>> createMarket(@RequestBody MarketRequest marketRequest) {
-       return ResponseEntity.ok(marketService.createMarket(marketRequest));
+    public ResponseEntity<String> createMarket(@RequestBody MarketRequest marketRequest) {
+       return marketService.createMarket(marketRequest);
     }
 
     @GetMapping
@@ -26,7 +26,7 @@ public class MarketController {
         return ResponseEntity.ok(marketService.getMarketByName(marketName));
     }
 
-    @DeleteMapping("/name")
+    @DeleteMapping("/{name}")
     public ResponseEntity<String> deleteByName(@PathVariable(name = "name") final String name){
         marketService.deleteByName(name);
         return ResponseEntity.ok("Market was removed");

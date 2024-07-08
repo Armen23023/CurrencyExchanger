@@ -68,7 +68,7 @@ public class ExchangeService {
         currencyRate.setRateToAmd(rateToAMD);
         currencyRateRepository.save(currencyRate);
 
-        return ResponseEntity.status(HttpStatus.OK).body("Currency rate updated successfully.");
+        return ResponseEntity.status(HttpStatus.CREATED).body("Currency rate updated successfully.");
     }
 
 
