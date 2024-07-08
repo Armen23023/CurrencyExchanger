@@ -1,5 +1,8 @@
 package com.example.CurrencyExchanger.exeptions;
 
+import lombok.Getter;
+
+@Getter
 public class BadRequestException  extends RuntimeException {
 
     private final String message;
@@ -10,7 +13,4 @@ public class BadRequestException  extends RuntimeException {
     }
 
 
-    public String getMessage() {
-        return message;
-    }
 }

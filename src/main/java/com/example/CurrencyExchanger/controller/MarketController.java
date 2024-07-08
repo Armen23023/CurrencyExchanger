@@ -25,4 +25,10 @@ public class MarketController {
     public  ResponseEntity<MarketResponse> getMarketByName(@RequestParam String  marketName){
         return ResponseEntity.ok(marketService.getMarketByName(marketName));
     }
+
+    @DeleteMapping("/name")
+    public ResponseEntity<String> deleteByName(@PathVariable(name = "name") final String name){
+        marketService.deleteByName(name);
+        return ResponseEntity.ok("Market was removed");
+    }
 }

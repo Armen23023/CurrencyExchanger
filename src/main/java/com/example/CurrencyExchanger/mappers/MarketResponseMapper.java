@@ -1,7 +1,5 @@
 package com.example.CurrencyExchanger.mappers;
 
-
-import com.example.CurrencyExchanger.dto.request.MarketRequest;
 import com.example.CurrencyExchanger.dto.response.MarketResponse;
 import com.example.CurrencyExchanger.model.Market;
 import lombok.RequiredArgsConstructor;

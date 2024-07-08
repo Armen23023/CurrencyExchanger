@@ -1,12 +1,10 @@
 package com.example.CurrencyExchanger.dto.request;
 
-import com.example.CurrencyExchanger.model.CurrencyCode;
-import com.example.CurrencyExchanger.model.Market;
+
 import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
-import java.time.LocalDateTime;
 
 @Getter
 @Setter

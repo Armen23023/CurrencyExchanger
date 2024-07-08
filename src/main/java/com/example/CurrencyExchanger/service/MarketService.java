@@ -59,4 +59,12 @@ public class MarketService {
         return responseMapper.apply(market.get());
 
     }
+
+    public void deleteByName(String name) {
+        if (marketRepository.existsByName(name)){
+            marketRepository.deleteByName(name);
+        }else {
+            throw new BadRequestException("Market not exists ");
+        }
+    }
 }
