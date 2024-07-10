@@ -1,6 +1,6 @@
 # Currency Exchanger
 
-Currency Exchanger API application by using Spring Boot, Hibernate, Postgresql
+Currency Exchanger API application by using Spring Boot, Hibernate, Postgresql.
 This Application has Markets, every Market has its currency rates. There is a service for exchanging currencies.
 Service  has the option to exchange other currencies through dram (EUR->USD = EUR->AMD + AMD->USD), and there is a service for saving exchange history.
 
